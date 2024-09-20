@@ -41,7 +41,7 @@ public class Pawn extends Piece{
 
                 if(!board.getTile(beforeCanGoTo).isTileBusy()&& !board.getTile(canGoTo).isTileBusy()){
                     legalMoves.add(new Moves.MajorMove(board,this,canGoTo));
-                }//handels the jump move
+                }//handels the jump move first move of pawn
             }else if(move==7
                     && !(BoardUtils.aethCol[this.pPos]&&this.pColour.isWhite()||
                     BoardUtils.firstCol[this.pPos]&&this.pColour.isBlack())){
