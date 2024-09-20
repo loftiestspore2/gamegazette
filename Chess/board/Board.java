@@ -28,6 +28,7 @@ public class Board {
                 activePieces.add(piece);
             }
         }
+
         return Collections.unmodifiableList(activePieces);
     }
 
