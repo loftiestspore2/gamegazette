@@ -18,7 +18,10 @@
       <change beforePath="$PROJECT_DIR$/Chess/Chess/piece/Piece.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Chess/Chess/piece/Queen.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Chess/Chess/piece/Rook.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Chess/ChessB/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chess/board/BoardUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/Chess/board/BoardUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chess/board/Colour.java" beforeDir="false" afterPath="$PROJECT_DIR$/Chess/board/Colour.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chess/piece/Pawn.java" beforeDir="false" afterPath="$PROJECT_DIR$/Chess/piece/Pawn.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chess/piece/Piece.java" beforeDir="false" afterPath="$PROJECT_DIR$/Chess/piece/Piece.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,18 +60,19 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.Chess.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;feature/tebogo__Pawn&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/dev&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Chess.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "feature/tebogo__",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/dev",
+    "project.structure.last.edited": "Libraries",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.intentionPowerPack"
   }
-}</component>
+}]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -88,6 +92,17 @@
     </task>
     <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="adding initial file to repo&#10;&#10;adding initial file to repo&#10;: the board package{&#10;}&#10;,the Piece package{&#10;}" />

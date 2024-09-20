@@ -11,7 +11,7 @@ public class Rook extends Piece {
 
     private final static int[] vectorCanMove = {-8,-1,1,8};
 
-    Rook(int pPos, Colour pColour) {
+    public Rook(int pPos, Colour pColour) {
         super(pPos, pColour);
     }
 

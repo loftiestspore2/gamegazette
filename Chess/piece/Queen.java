@@ -14,7 +14,7 @@ public class Queen extends Piece {
     private final static int[] vectorCanMove = {-9,-7,7,9};
 
 
-    Queen(int pPos, Colour pColour) {
+    public Queen(int pPos, Colour pColour) {
         super(pPos, pColour);
     }
 
@@ -61,4 +61,5 @@ public class Queen extends Piece {
     }
     private static boolean isCol8exc(int cPos,int move){//edge cases
         return BoardUtils.firstCol[cPos] &&(move==-7||move==9);
-    }}
+    }
+}

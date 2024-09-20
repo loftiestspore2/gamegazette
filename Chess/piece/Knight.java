@@ -14,7 +14,7 @@ import java.util.List;
 public class Knight extends Piece{
     private final static int[] canMove ={-17,-15,-10,-6,6,10,15,17};
 
-    Knight(int pPos, Colour pColour) {
+    public Knight(int pPos, Colour pColour) {
         super(pPos, pColour);//TODO what does this super thing do check
     }
 
@@ -42,14 +42,13 @@ public class Knight extends Piece{
 
                     if(this.pColour!=whoColour){//kill him
 
-                        // TODO just a place holder cause im quite tired
-                        legalMoves.add(new Moves.MajorMove(board,this,canGoTo));
+                        // TODO just a place holder cause im quite tired Done
+                        legalMoves.add(new Moves.killHim(board,this,canGoTo,who));
                     }
                 }
             }
         }
-        List<Moves> lmoves = Collections.unmodifiableList(legalMoves);
-        return lmoves;
+        return Collections.unmodifiableList(legalMoves);
     }
 
     private static boolean isCol1exc(int cPos,int move){//edge case

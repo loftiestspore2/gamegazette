@@ -12,7 +12,7 @@ public class Bishop extends Piece{
 
     private final static int[] vectorCanMove = {-9,-8,-7,-1,1,7,8,9};//bishop U rook
 
-    Bishop(int pPos, Colour pColour) {
+    public Bishop(int pPos, Colour pColour) {
         super(pPos, pColour);
     }
 
