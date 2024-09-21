@@ -40,7 +40,7 @@ public class Board {
         final List<Moves>legalMoves=new ArrayList<>();
 
         for(Piece piece:pieces){
-            legalMoves.add((Moves) piece.workLegalMoves(this));//TODO check out later
+            legalMoves.addAll(piece.workLegalMoves(this));//TODO check out later its suposed to be add all 
         }
 
         return Collections.unmodifiableList(legalMoves);
@@ -51,10 +51,15 @@ public class Board {
         final List<Piece>activePieces= new ArrayList<>();
 
         for(Tile tile:gameBoard){
-            Piece piece = tile.getPiece();
-            if(piece.getpColour()==colour){
-                activePieces.add(piece);
-            }else{continue;}
+            
+            if(tile.isTileBusy()){
+                ///this is to not get that null pointer exception 
+                Piece piece = tile.getPiece();
+                
+                if(piece.getpColour()==colour){
+                    activePieces.add(piece);
+                }
+            }
         }
 
 
