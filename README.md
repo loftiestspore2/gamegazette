@@ -14,7 +14,6 @@ Charmaine Chikengezha g24C0029
 Tebogo Phosa g24P9535
 Endinaso Tidolo g23T7288
 
-Keabetswe Morolong g22M6343
 Group mentor: Tywin Langa (g22l4786@campus.ru.ac.za)
 Project title: boredgames
 
