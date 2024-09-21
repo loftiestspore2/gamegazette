@@ -57,4 +57,5 @@ public class King extends Piece{//one square in any direction
     public String toString(){
         return PieceType.King.toString();
     }
+
 }

@@ -23,6 +23,7 @@ public enum Colour {//this is
             return 1;
         }
 
+
         @Override
         public boolean isWhite() {
             return false;

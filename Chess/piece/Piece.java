@@ -2,7 +2,6 @@ package piece;
 
 import board.*;
 
-
 import java.util.Collection;
 
 public abstract class Piece{

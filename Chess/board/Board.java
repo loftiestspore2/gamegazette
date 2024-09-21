@@ -57,6 +57,7 @@ public class Board {
             }else{continue;}
         }
 
+
         return Collections.unmodifiableList(activePieces);
     }
 
