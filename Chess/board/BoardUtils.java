@@ -1,6 +1,5 @@
 package board;
 
-
 public class BoardUtils {
 
     public static final boolean[] firstCol=initcol(0);
