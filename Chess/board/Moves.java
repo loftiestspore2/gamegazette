@@ -2,7 +2,6 @@ package board;
 
 import piece.Piece;
 
-
 public abstract class Moves {
 
     final board.Board board;

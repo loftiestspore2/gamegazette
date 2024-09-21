@@ -65,4 +65,5 @@ public class Bishop extends Piece{
     private static boolean isCol8exc(int cPos,int move){//edge cases
         return BoardUtils.firstCol[cPos] &&(move==-7||move==1||move==9);
     }
+
 }
