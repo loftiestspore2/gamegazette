@@ -39,6 +39,11 @@ public abstract class Tile {
         }
 
         @Override
+        public String toString(){
+            return "-";
+        }
+
+        @Override
         public boolean isTileBusy() {
             return false;
         }
@@ -57,6 +62,12 @@ public abstract class Tile {
         }
 
         @Override
+        public String toString(){
+            return (getPiece().getpColour().isBlack())? toString().toLowerCase():
+                   toString();
+        }
+
+        @Override
         public boolean isTileBusy(){
             return true;
         }
@@ -65,6 +76,6 @@ public abstract class Tile {
         public Piece getPiece(){
             return this.pieceOnTile;
         }
-        
+
     }
 }

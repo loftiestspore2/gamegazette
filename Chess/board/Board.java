@@ -16,6 +16,34 @@ public class Board {
         this.whitePieces=workActivePieces(this.gameBoard,Colour.White);
         this.blackPieces=workActivePieces(this.gameBoard,Colour.Black);
 
+        final Collection<Moves> whiteLegalMoves= workLegalmoves(this.whitePieces);
+        final Collection<Moves> blackLegalMoves= workLegalmoves(this.blackPieces);
+
+    }
+
+    @Override
+    public String toString(){
+        final StringBuilder builder = new StringBuilder();
+
+        for(int i =0;i<BoardUtils.nTiles;i++){
+           String tileText = this.gameBoard.get(i).toString();
+           builder.append(String.format("%3s",tileText));
+           if((i+1)%BoardUtils.rowTiles==0){
+               builder.append("\n");
+           }
+        }
+        return builder.toString();
+    }
+
+    private Collection<Moves> workLegalmoves(Collection<Piece> pieces){
+
+        final List<Moves>legalMoves=new ArrayList<>();
+
+        for(Piece piece:pieces){
+            legalMoves.add((Moves) piece.workLegalMoves(this));//TODO check out later
+        }
+
+        return Collections.unmodifiableList(legalMoves);
     }
 
     private static Collection<Piece> workActivePieces(List<Tile> gameBoard, Colour colour) {
@@ -26,7 +54,7 @@ public class Board {
             Piece piece = tile.getPiece();
             if(piece.getpColour()==colour){
                 activePieces.add(piece);
-            }
+            }else{continue;}
         }
 
         return Collections.unmodifiableList(activePieces);
@@ -56,7 +84,6 @@ public class Board {
         builder.setPiece(new Bishop(5,Colour.Black));
         builder.setPiece(new Knight(6,Colour.Black));
         builder.setPiece(new Rook(7,Colour.Black));
-
         builder.setPiece(new Pawn(8,Colour.Black));
         builder.setPiece(new Pawn(9,Colour.Black));
         builder.setPiece(new Pawn(10,Colour.Black));
@@ -94,6 +121,10 @@ public class Board {
         Map<Integer, Piece> bConFig;
 
         Colour nextTurn;
+
+        public Builder(){
+            this.bConFig=new HashMap<>();
+        }
 
         public Builder setPiece(Piece piece){
             this.bConFig.put(piece.getpPos(),piece);

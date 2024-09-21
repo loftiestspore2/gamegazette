@@ -52,4 +52,9 @@ public class King extends Piece{//one square in any direction
     private static boolean isCol8exc(int cPos,int move){//edge case
         return BoardUtils.aethCol[cPos] && (move==-7)||(move==1)||(move==9);
     }
+
+    @Override
+    public String toString(){
+        return PieceType.King.toString();
+    }
 }

@@ -32,5 +32,27 @@ public abstract class Piece{
 
     public abstract Collection<Moves> workLegalMoves(final Board board);
 
+    public enum PieceType{
+
+        Bishop("B"),
+        King("K"),
+        Knight("N"),
+        Pawn("P"),
+        Queen("Q"),
+        Rook("R");
+
+        private String pieceName;
+
+        PieceType(String pieceName){
+            this.pieceName=pieceName;
+        }
+
+        @Override
+        public String toString(){
+            return this.pieceName;
+        }
+
+    }
+
 
 }

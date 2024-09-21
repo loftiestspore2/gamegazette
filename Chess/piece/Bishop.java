@@ -54,6 +54,12 @@ public class Bishop extends Piece{
         List<Moves> lmoves = Collections.unmodifiableList(legalMoves);
         return lmoves;
     }
+
+    @Override
+    public String toString(){
+        return PieceType.Bishop.toString();
+    }
+
     private static boolean isCol1exc(int cPos,int move){//edge cases
         return BoardUtils.firstCol[cPos] &&(move==1||move==-9||move==7);
     }

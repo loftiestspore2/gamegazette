@@ -14,9 +14,9 @@ public class BoardUtils {
 
     public static final int rowTiles = 8;
 
-    public static final boolean[] secRow= null;
+    public static final boolean[] secRow= initRow(8);
 
-    public static final boolean[] sevRow= null;
+    public static final boolean[] sevRow= initRow(48);
 
     private BoardUtils(){
         throw new RuntimeException("USELESS MANN");
@@ -31,6 +31,17 @@ public class BoardUtils {
         }while(colNo< nTiles);
 
         return col;
+    }
+
+    public static boolean[]initRow(int rowNo){
+
+        final boolean[] row =new boolean [nTiles];
+
+        do{
+           row[rowNo]=true;
+           rowNo++;
+       }while(rowNo%rowTiles!=0);
+        return row;
     }
 
     public static boolean isValidTileco(int move) {

@@ -59,4 +59,9 @@ public class Rook extends Piece {
     private static boolean isCol8exc(int cPos,int move){//edge cases
         return BoardUtils.firstCol[cPos] &&(move==1);
     }
+
+    @Override
+    public String toString(){
+        return PieceType.Rook.toString();
+    }
 }

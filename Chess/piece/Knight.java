@@ -67,5 +67,8 @@ public class Knight extends Piece{
         return BoardUtils.aethCol[cPos] && (move==-15)||(move==-6)||(move==10)||(move==17);
     }
 
-
+    @Override
+    public String toString(){
+        return PieceType.Knight.toString();
+    }
 }
