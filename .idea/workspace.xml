@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="ecf650d0-1a38-4cb4-bf09-191e2c46d741" name="Changes" comment="added to Pawn and board class">
+      <change afterPath="$PROJECT_DIR$/Chess/gChess.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chess/Chess.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chess/board/Board.java" beforeDir="false" afterPath="$PROJECT_DIR$/Chess/board/Board.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chess/board/BoardUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/Chess/board/BoardUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chess/board/Tile.java" beforeDir="false" afterPath="$PROJECT_DIR$/Chess/board/Tile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chess/piece/Bishop.java" beforeDir="false" afterPath="$PROJECT_DIR$/Chess/piece/Bishop.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chess/piece/King.java" beforeDir="false" afterPath="$PROJECT_DIR$/Chess/piece/King.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chess/piece/Knight.java" beforeDir="false" afterPath="$PROJECT_DIR$/Chess/piece/Knight.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chess/piece/Pawn.java" beforeDir="false" afterPath="$PROJECT_DIR$/Chess/piece/Pawn.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chess/piece/Piece.java" beforeDir="false" afterPath="$PROJECT_DIR$/Chess/piece/Piece.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chess/piece/Queen.java" beforeDir="false" afterPath="$PROJECT_DIR$/Chess/piece/Queen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chess/piece/Rook.java" beforeDir="false" afterPath="$PROJECT_DIR$/Chess/piece/Rook.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Enum" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <favorite-branches>
+      <branch-storage>
+        <map>
+          <entry type="LOCAL">
+            <value>
+              <list>
+                <branch-info repo="$PROJECT_DIR$" source="feature/tebogo_Pawn" />
+              </list>
+            </value>
+          </entry>
+        </map>
+      </branch-storage>
+    </favorite-branches>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 0
+}</component>
+  <component name="ProjectId" id="2mAIy5y9NeOYLIA0rDdIdyuJ0nV" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Chess.executor": "Run",
+    "Application.gChess.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "feature/tebogo__",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/dev",
+    "project.structure.last.edited": "Libraries",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.intentionPowerPack"
+  }
+}]]></component>
+  <component name="RunManager">
+    <configuration name="gChess" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="gChess" />
+      <module name="gamegazette" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.gChess" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ecf650d0-1a38-4cb4-bf09-191e2c46d741" name="Changes" comment="" />
+      <created>1726513204219</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1726513204219</updated>
+    </task>
+    <task id="LOCAL-00001" summary="im just fixing syntax and variable errors">
+      <option name="closed" value="true" />
+      <created>1726519297221</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1726519297221</updated>
+    </task>
+    <task id="LOCAL-00002" summary="added to Pawn and board class">
+      <option name="closed" value="true" />
+      <created>1726872927536</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1726872927536</updated>
+    </task>
+    <task id="LOCAL-00003" summary="added to Pawn and board class">
+      <option name="closed" value="true" />
+      <created>1726873019633</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1726873019633</updated>
+    </task>
+    <task id="LOCAL-00004" summary="added to Pawn and board class">
+      <option name="closed" value="true" />
+      <created>1726876095534</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1726876095534</updated>
+    </task>
+    <task id="LOCAL-00005" summary="added to Pawn and board class">
+      <option name="closed" value="true" />
+      <created>1726876187367</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1726876187367</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="adding initial file to repo&#10;&#10;adding initial file to repo&#10;: the board package{&#10;}&#10;,the Piece package{&#10;}" />
+    <MESSAGE value="im just fixing syntax and variable errors" />
+    <MESSAGE value="added to Pawn and board class" />
+    <option name="LAST_COMMIT_MESSAGE" value="added to Pawn and board class" />
+  </component>
+</project>
