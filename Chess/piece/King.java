@@ -10,13 +10,13 @@ import java.util.List;
 public class King extends Piece{//one square in any direction
     private final static int[] canMove ={-9,-8,-7,-1,1,7,8,9};
     public King(int pPos, Colour pColour) {
-        super(pPos, pColour);
+        super(pPos,pColour,PieceType.King);
     }
 
     @Override
-    public Collection<Moves> workLegalMoves(Board board) {
+    public Collection<Move> workLegalMoves(Board board) {
 
-        final List<Moves>legalMoves=new ArrayList<>();
+        final List<Move>legalMoves=new ArrayList<>();
 
         for(int move:canMove){
             int canGoTo = this.pPos+move;//in
@@ -28,14 +28,14 @@ public class King extends Piece{//one square in any direction
             if(BoardUtils.isValidTileco(canGoTo)){
                 final Tile canGoToTile = board.getTile(canGoTo);
                 if(!canGoToTile.isTileBusy()){
-                    legalMoves.add(new Moves.MajorMove(board,this,canGoTo));
+                    legalMoves.add(new Move.MajorMove(board,this,canGoTo));
                 }else {
                     final Piece who = canGoToTile.getPiece();
                     final Colour whoColour = who.getpColour();
 
                     if (this.pColour != whoColour) {//kill him
 
-                        legalMoves.add(new Moves.killHim(board, this, canGoTo, who));
+                        legalMoves.add(new Move.killHim(board, this, canGoTo, who));
                     }
                 }
             }
@@ -43,6 +43,11 @@ public class King extends Piece{//one square in any direction
 
 
         return Collections.unmodifiableList(legalMoves);
+    }
+
+    @Override
+    public King movePiece(Move move) {
+        return new King(move.getDestinationCo(),move.getmPiece().getpColour());
     }
 
     private static boolean isCol1exc(int cPos,int move){//edge case
