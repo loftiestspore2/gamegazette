@@ -50,7 +50,7 @@ public abstract class Move {
 
     }
 
-    public static final class killHim extends Move {
+    public static class killHim extends Move {
 
         final Piece killedPiece; //attacked piece
 
