@@ -3,20 +3,22 @@ package board;
 public class BoardUtils {
 
     public static final boolean[] firstCol=initcol(0);
-
     public static boolean[] secCol=initcol(1);
-
     public static boolean[] sevCol=initcol(6);
-
     public static boolean[] aethCol=initcol(7);//colomb 8
 
     public static final int nTiles = 64;
 
     public static final int rowTiles = 8;
 
-    public static final boolean[] secRow= initRow(8);
-
-    public static final boolean[] sevRow= initRow(48);
+    public static final boolean[] aethRow= initRow(0);
+    public static final boolean[] sevRow = initRow(8);
+    public static final boolean[] sithRow = initRow(16);
+    public static final boolean[] fithRow = initRow(24);
+    public static final boolean[] frthRow = initRow(32);
+    public static final boolean[] thrdRow = initRow(40);
+    public static final boolean[] secRow = initRow(48);
+    public static final boolean[] frstRow = initRow(56);
 
     private BoardUtils(){
         throw new RuntimeException("USELESS MANN");

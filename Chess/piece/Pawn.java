@@ -35,7 +35,7 @@ public class Pawn extends Piece{
                 legalMoves.add(new Move.MajorMove(board,this,canGoTo)); //handels non attacking move
             }else if(move==16 && this.isFirst() &&
                     ((BoardUtils.secRow[this.pPos]&&this.pColour.isBlack())||
-                    (BoardUtils.sevRow[this.pPos]&&this.pColour.isWhite()))){
+                    (BoardUtils.secRow[this.pPos]&&this.pColour.isWhite()))){
 
                 final int beforeCanGoTo = this.pPos +(this.getpColour().getDirection()*8);
 
