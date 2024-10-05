@@ -4,45 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ecf650d0-1a38-4cb4-bf09-191e2c46d741" name="Changes" comment="added to Pawn and board class">
-      <change afterPath="$PROJECT_DIR$/Chess/gui/Table.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Chess/player/BlackPlayer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Chess/player/MoveStatus.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Chess/player/MoveTransition.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Chess/player/Player.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Chess/player/WhitePlayer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Chess/board/Board.java" beforeDir="false" afterPath="$PROJECT_DIR$/Chess/board/Board.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Chess/board/Colour.java" beforeDir="false" afterPath="$PROJECT_DIR$/Chess/board/Colour.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Chess/board/Moves.java" beforeDir="false" afterPath="$PROJECT_DIR$/Chess/board/Move.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Chess/board/Tile.java" beforeDir="false" afterPath="$PROJECT_DIR$/Chess/board/Tile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Chess/gChess.java" beforeDir="false" afterPath="$PROJECT_DIR$/Chess/gChess.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Chess/piece/Bishop.java" beforeDir="false" afterPath="$PROJECT_DIR$/Chess/piece/Bishop.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Chess/piece/King.java" beforeDir="false" afterPath="$PROJECT_DIR$/Chess/piece/King.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Chess/piece/Knight.java" beforeDir="false" afterPath="$PROJECT_DIR$/Chess/piece/Knight.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Chess/piece/Pawn.java" beforeDir="false" afterPath="$PROJECT_DIR$/Chess/piece/Pawn.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Chess/piece/Piece.java" beforeDir="false" afterPath="$PROJECT_DIR$/Chess/piece/Piece.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Chess/piece/Queen.java" beforeDir="false" afterPath="$PROJECT_DIR$/Chess/piece/Queen.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Chess/piece/Rook.java" beforeDir="false" afterPath="$PROJECT_DIR$/Chess/piece/Rook.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/gamegazette/board/Board$Builder.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/gamegazette/board/Board$Builder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/gamegazette/board/Board.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/gamegazette/board/Board.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/gamegazette/board/Colour$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/gamegazette/board/Colour$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/gamegazette/board/Colour$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/gamegazette/board/Colour$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/gamegazette/board/Colour.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/gamegazette/board/Colour.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/gamegazette/board/Moves$MajorMove.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/gamegazette/board/Moves$killHim.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/gamegazette/board/Moves.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/gamegazette/board/Tile$BusyTile.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/gamegazette/board/Tile$BusyTile.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/gamegazette/gChess.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/gamegazette/gChess.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/gamegazette/piece/Bishop.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/gamegazette/piece/Bishop.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/gamegazette/piece/King.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/gamegazette/piece/King.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/gamegazette/piece/Knight.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/gamegazette/piece/Knight.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/gamegazette/piece/Pawn.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/gamegazette/piece/Pawn.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/gamegazette/piece/Piece$PieceType.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/gamegazette/piece/Piece$PieceType.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/gamegazette/piece/Piece.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/gamegazette/piece/Piece.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/gamegazette/piece/Queen.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/gamegazette/piece/Queen.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/gamegazette/piece/Rook.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/gamegazette/piece/Rook.class" afterDir="false" />
-    </list>
+    <list default="true" id="ecf650d0-1a38-4cb4-bf09-191e2c46d741" name="Changes" comment="added to Pawn and board class" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -83,20 +45,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.Chess.executor&quot;: &quot;Run&quot;,
-    &quot;Application.gChess.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;feature/tebogo__&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/dev&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.intentionPowerPack&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Chess.executor": "Run",
+    "Application.gChess.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "feature/tebogo.-",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/dev",
+    "project.structure.last.edited": "Libraries",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.intentionPowerPack"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="player" />
@@ -173,7 +135,23 @@
       <option name="project" value="LOCAL" />
       <updated>1727897768244</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="added to Pawn and board class">
+      <option name="closed" value="true" />
+      <created>1728032232276</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1728032232276</updated>
+    </task>
+    <task id="LOCAL-00008" summary="added to Pawn and board class">
+      <option name="closed" value="true" />
+      <created>1728032249746</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1728032249746</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
