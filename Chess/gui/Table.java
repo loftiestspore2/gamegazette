@@ -106,6 +106,7 @@ public class Table {
 
         private void setPieceIconOnTile(final Board board){
             this.removeAll();
+
             if(board.getTile(this.tileId).isTileBusy()){
 
                 try {
