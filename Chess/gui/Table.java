@@ -2,7 +2,6 @@ package gui;
 
 import board.Board;
 import board.BoardUtils;
-import piece.*;
 
 import javax.imageio.ImageIO;
 import javax.swing.*;
@@ -18,13 +17,16 @@ import java.util.List;
 public class Table {
 
     private final JFrame gameFrame;
+    private final Board chessBoard;
     private final BoardPanel boardPanel;
-    private final Color darkTileColour = Color.decode("#FFFACD");
-    private final Color lightTileColour = Color.decode("#593E1A");
 
     private static Dimension mainFrame = new Dimension(600,600);
     private static Dimension boardPanelDim=new Dimension(400,350);
     private static Dimension tilePanDim=new Dimension(10,10);
+    private final static String piecePath = "gifs/pieces/";
+
+    private final Color darkTileColour = Color.decode("#FFFACD");
+    private final Color lightTileColour = Color.decode("#593E1A");
 
     public Table(){
         this.gameFrame=new JFrame("Gamegazette Chess");
@@ -35,6 +37,7 @@ public class Table {
         this.gameFrame.setSize(mainFrame);
 
         this.boardPanel= new BoardPanel();
+        this.chessBoard =Board.createBoard();
         this.gameFrame.add(this.boardPanel,BorderLayout.CENTER);
 
         this.gameFrame.setVisible(true);
@@ -97,19 +100,20 @@ public class Table {
             this.tileId=tileId;
             setPreferredSize(tilePanDim);
             setTilecolour();//assign tileColour
+            setPieceIconOnTile(chessBoard);
             validate();
         }
 
         private void setPieceIconOnTile(final Board board){
             this.removeAll();
             if(board.getTile(this.tileId).isTileBusy()){
-                String pieceIconPath="";
+
                 try {
                     /*so this would look like this
                     * WhiteBishop --> WB
                     * --> WB.gif this is due to the using BufferedImage
                     **/
-                    final BufferedImage image = ImageIO.read(new File(pieceIconPath +board
+                    final BufferedImage image = ImageIO.read(new File(piecePath +board
                             .getTile(this.tileId).getPiece().getpColour().toString().substring(0,1)+
                             board.getTile(this.tileId).getPiece().toString()+"gif"));
 
