@@ -4,52 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ecf650d0-1a38-4cb4-bf09-191e2c46d741" name="Changes" comment="added to Pawn and board class">
+    <list default="true" id="ecf650d0-1a38-4cb4-bf09-191e2c46d741" name="Changes" comment="there  might be classes with missing code but the gui and move and all Pieces and boardutils">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Chess/board/Board.java" beforeDir="false" afterPath="$PROJECT_DIR$/Chess/board/Board.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Chess/board/BoardUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/Chess/board/BoardUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Chess/board/Move.java" beforeDir="false" afterPath="$PROJECT_DIR$/Chess/board/Move.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Chess/board/Tile.java" beforeDir="false" afterPath="$PROJECT_DIR$/Chess/board/Tile.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Chess/gui/Table.java" beforeDir="false" afterPath="$PROJECT_DIR$/Chess/gui/Table.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Chess/piece/Bishop.java" beforeDir="false" afterPath="$PROJECT_DIR$/Chess/piece/Bishop.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Chess/piece/King.java" beforeDir="false" afterPath="$PROJECT_DIR$/Chess/piece/King.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Chess/piece/Knight.java" beforeDir="false" afterPath="$PROJECT_DIR$/Chess/piece/Knight.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Chess/piece/Piece.java" beforeDir="false" afterPath="$PROJECT_DIR$/Chess/piece/Piece.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Chess/piece/Queen.java" beforeDir="false" afterPath="$PROJECT_DIR$/Chess/piece/Queen.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Chess/piece/Rook.java" beforeDir="false" afterPath="$PROJECT_DIR$/Chess/piece/Rook.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Chess/player/BlackPlayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/Chess/player/BlackPlayer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Chess/player/MoveStatus.java" beforeDir="false" afterPath="$PROJECT_DIR$/Chess/player/MoveStatus.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Chess/player/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/Chess/player/Player.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Chess/player/WhitePlayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/Chess/player/WhitePlayer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/gamegazette/board/Board$Builder.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/gamegazette/board/Board$Builder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/gamegazette/board/Board.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/gamegazette/board/Board.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/gamegazette/board/BoardUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/gamegazette/board/BoardUtils.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/gamegazette/board/Move$MajorMove.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/gamegazette/board/Move$MajorMove.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/gamegazette/board/Move$killHim.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/gamegazette/board/Move$killHim.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/gamegazette/board/Move.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/gamegazette/board/Move.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/gamegazette/board/Tile$BusyTile.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/gamegazette/board/Tile$BusyTile.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/gamegazette/board/Tile$EmptyTile.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/gamegazette/board/Tile$EmptyTile.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/gamegazette/board/Tile.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/gamegazette/board/Tile.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chess/player/MoveTransition.java" beforeDir="false" afterPath="$PROJECT_DIR$/Chess/player/MoveTransition.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/gamegazette/gui/Table.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/gamegazette/gui/Table.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/gamegazette/piece/Bishop.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/gamegazette/piece/Bishop.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/gamegazette/piece/King.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/gamegazette/piece/King.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/gamegazette/piece/Knight.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/gamegazette/piece/Knight.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/gamegazette/piece/Piece$PieceType$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/gamegazette/piece/Piece$PieceType$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/gamegazette/piece/Piece$PieceType$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/gamegazette/piece/Piece$PieceType$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/gamegazette/piece/Piece$PieceType$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/gamegazette/piece/Piece$PieceType$3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/gamegazette/piece/Piece$PieceType$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/gamegazette/piece/Piece$PieceType$4.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/gamegazette/piece/Piece$PieceType$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/gamegazette/piece/Piece$PieceType$5.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/gamegazette/piece/Piece$PieceType$6.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/gamegazette/piece/Piece$PieceType$6.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/gamegazette/piece/Piece$PieceType.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/gamegazette/piece/Piece$PieceType.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/gamegazette/piece/Queen.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/gamegazette/piece/Queen.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/gamegazette/piece/Rook.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/gamegazette/piece/Rook.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/gamegazette/player/BlackPlayer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/gamegazette/player/BlackPlayer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/gamegazette/player/MoveStatus$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/gamegazette/player/MoveStatus$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/gamegazette/player/MoveStatus$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/gamegazette/player/MoveStatus$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/gamegazette/player/MoveStatus$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/gamegazette/player/MoveStatus$3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/gamegazette/player/MoveStatus.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/gamegazette/player/MoveStatus.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/gamegazette/player/Player.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/gamegazette/player/Player.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/gamegazette/player/WhitePlayer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/gamegazette/player/WhitePlayer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/gamegazette/player/MoveTransition.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/gamegazette/player/MoveTransition.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -197,7 +157,15 @@
       <option name="project" value="LOCAL" />
       <updated>1728032249746</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="there  might be classes with missing code but the gui and move and all Pieces and boardutils">
+      <option name="closed" value="true" />
+      <created>1728226726666</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1728226726666</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -215,7 +183,8 @@
     <MESSAGE value="adding initial file to repo&#10;&#10;adding initial file to repo&#10;: the board package{&#10;}&#10;,the Piece package{&#10;}" />
     <MESSAGE value="im just fixing syntax and variable errors" />
     <MESSAGE value="added to Pawn and board class" />
-    <option name="LAST_COMMIT_MESSAGE" value="added to Pawn and board class" />
+    <MESSAGE value="there  might be classes with missing code but the gui and move and all Pieces and boardutils" />
+    <option name="LAST_COMMIT_MESSAGE" value="there  might be classes with missing code but the gui and move and all Pieces and boardutils" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

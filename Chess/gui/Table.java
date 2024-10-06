@@ -27,7 +27,7 @@ public class Table {
 
     private final JFrame gameFrame;
     private final BoardPanel boardPanel;
-    private final Board chessBoard;
+    private Board chessBoard;
 
     private Tile nowTile;
     private Tile destTile;
@@ -103,6 +103,16 @@ public class Table {
             setPreferredSize(boardPanelDim);
             validate();
         }
+
+        public void drawBoard(Board board){
+            removeAll();
+            for(final TilePanel tP:boardTiles){
+                tP.drawTile(board);
+                add(tP);
+            }
+            validate();
+            repaint();
+        }
     }
 
     private class TilePanel extends JPanel{
@@ -131,8 +141,24 @@ public class Table {
                         }else{
                             destTile=chessBoard.getTile(tileId);
                             Move move =Move.MoveFactory.createMove(chessBoard,nowTile.getTileco(),destTile.getTileco());
+
+                            final MoveTransition transition=chessBoard.currentPlayer().makeMove(move);
+                            if(transition.getMoveStatus().isDone()){
+                                chessBoard = transition.getTransitionBoard();
+                                //TODO add move to movelog
+
+                            }
                         }
+                        nowTile=null;
+                        destTile=null;
+                        movedPiece=null;
                     }
+                    SwingUtilities.invokeLater(new Runnable() {
+                        @Override
+                        public void run() {
+                            boardPanel.drawBoard(chessBoard);
+                        }
+                    });
 
                 }
 
@@ -158,7 +184,12 @@ public class Table {
             });
             validate();
         }
-
+        public void drawTile(Board board){
+            setTilecolour();
+            setPieceIconOnTile(board);
+            validate();
+            repaint();
+        }
         private void setPieceIconOnTile(final Board board){
             this.removeAll();
 
