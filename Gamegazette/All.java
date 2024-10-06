@@ -19,29 +19,12 @@ public class All {
         final JMenuBar tMenuBar = createMTable();
         gameFrame.setJMenuBar(tMenuBar);
         gameFrame.setVisible(true);
-        //validate();
+        //games();
+
     }
 
-    private static JMenuBar createMTable(){
-        final JMenuBar tMenuBar = new JMenuBar();
-        tMenuBar.add(createFileMenu());
-        return tMenuBar;
-    }
-
-    private static JMenu createFileMenu(){ // to load Moves
+    private static void games(){
         final JMenu fMenu = new JMenu("File");
-
-        final JMenuItem openPGN = new JMenuItem("Load PGN File");
-
-        openPGN.addActionListener(new ActionListener() {
-            @Override
-
-            public void actionPerformed(ActionEvent e) {
-                System.out.println("for now this does nothin and this will never print anything meaning :)");
-            }
-        });
-        ///very weird syntax not really
-        fMenu.add(openPGN);
 
         final JMenuItem exitMenuI = new JMenuItem("Exit");
         exitMenuI.addActionListener(new ActionListener() {
@@ -51,6 +34,44 @@ public class All {
             }
         });
         fMenu.add(exitMenuI);
+        
+    }
+
+    private static JMenuBar createMTable(){
+        final JMenuBar tMenuBar = new JMenuBar();
+        tMenuBar.add(createFileMenu());
+        return tMenuBar;
+    }
+
+    private static JMenu createFileMenu(){ // to load Moves
+        final JMenu fMenu = new JMenu("Options");
+
+        final JMenuItem exitMenuI = new JMenuItem("Exit");
+        exitMenuI.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                System.exit(0);
+            }
+        });
+        fMenu.add(exitMenuI);
+
+        final JMenuItem breakerI = new JMenuItem("Play BrickBreaker");
+        breakerI.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                BrickBreaker brickBreaker = new BrickBreaker();
+            }
+        });
+        fMenu.add(breakerI);
+
+        final JMenuItem SnakeI = new JMenuItem("Play Snake");
+        SnakeI.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                Snake s = new Snake();
+            }
+        });
+        fMenu.add(SnakeI);
         return fMenu;
     }
 }

@@ -5,75 +5,83 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ecf650d0-1a38-4cb4-bf09-191e2c46d741" name="Changes" comment="GUI start">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Gamegazette/All.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Gamegazette/Brick_Breaker/BrickBreaker.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/gamegazette/gui/Table$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/gamegazette/gui/Table$2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/gamegazette/gui/Table$BoardPanel.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/gamegazette/gui/Table$TilePanel$1$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/gamegazette/gui/Table$TilePanel$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/gamegazette/gui/Table$TilePanel.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/gamegazette/pictures/backGround.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/gamegazette/pictures/pieces/BB.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/gamegazette/pictures/pieces/BK.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/gamegazette/pictures/pieces/BN.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/gamegazette/pictures/pieces/BP.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/gamegazette/pictures/pieces/BQ.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/gamegazette/pictures/pieces/BR.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/gamegazette/pictures/pieces/WB.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/gamegazette/pictures/pieces/WK.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/gamegazette/pictures/pieces/WN.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/gamegazette/pictures/pieces/WP.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/gamegazette/pictures/pieces/WQ.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/gamegazette/pictures/pieces/WR.gif" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Brick_Breaker/src/GamePlay.java" beforeDir="false" afterPath="$PROJECT_DIR$/Gamegazette/Brick_Breaker/GamePlay.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Brick_Breaker/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/Gamegazette/Brick_Breaker/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Brick_Breaker/src/MapGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/Gamegazette/Brick_Breaker/MapGenerator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gamegazette.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gamegazette/board/Board.java" beforeDir="false" afterPath="$PROJECT_DIR$/Gamegazette/Chess/board/Board.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gamegazette/board/BoardUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/Gamegazette/Chess/board/BoardUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gamegazette/board/Colour.java" beforeDir="false" afterPath="$PROJECT_DIR$/Gamegazette/Chess/board/Colour.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gamegazette/board/Move.java" beforeDir="false" afterPath="$PROJECT_DIR$/Gamegazette/Chess/board/Move.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gamegazette/board/Tile.java" beforeDir="false" afterPath="$PROJECT_DIR$/Gamegazette/Chess/board/Tile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gamegazette/gChess.java" beforeDir="false" afterPath="$PROJECT_DIR$/Gamegazette/Chess/gChess.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gamegazette/gifs/backGround.gif" beforeDir="false" afterPath="$PROJECT_DIR$/Gamegazette/Chess/pictures/backGround.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gamegazette/gifs/pieces/BB.gif" beforeDir="false" afterPath="$PROJECT_DIR$/Gamegazette/Chess/pictures/pieces/BB.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gamegazette/gifs/pieces/BK.gif" beforeDir="false" afterPath="$PROJECT_DIR$/Gamegazette/Chess/pictures/pieces/BK.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gamegazette/gifs/pieces/BN.gif" beforeDir="false" afterPath="$PROJECT_DIR$/Gamegazette/Chess/pictures/pieces/BN.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gamegazette/gifs/pieces/BP.gif" beforeDir="false" afterPath="$PROJECT_DIR$/Gamegazette/Chess/pictures/pieces/BP.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gamegazette/gifs/pieces/BQ.gif" beforeDir="false" afterPath="$PROJECT_DIR$/Gamegazette/Chess/pictures/pieces/BQ.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gamegazette/gifs/pieces/BR.gif" beforeDir="false" afterPath="$PROJECT_DIR$/Gamegazette/Chess/pictures/pieces/BR.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gamegazette/gifs/pieces/WB.gif" beforeDir="false" afterPath="$PROJECT_DIR$/Gamegazette/Chess/pictures/pieces/WB.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gamegazette/gifs/pieces/WK.gif" beforeDir="false" afterPath="$PROJECT_DIR$/Gamegazette/Chess/pictures/pieces/WK.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gamegazette/gifs/pieces/WN.gif" beforeDir="false" afterPath="$PROJECT_DIR$/Gamegazette/Chess/pictures/pieces/WN.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gamegazette/gifs/pieces/WP.gif" beforeDir="false" afterPath="$PROJECT_DIR$/Gamegazette/Chess/pictures/pieces/WP.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gamegazette/gifs/pieces/WQ.gif" beforeDir="false" afterPath="$PROJECT_DIR$/Gamegazette/Chess/pictures/pieces/WQ.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gamegazette/gifs/pieces/WR.gif" beforeDir="false" afterPath="$PROJECT_DIR$/Gamegazette/Chess/pictures/pieces/WR.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gamegazette/gui/Table.java" beforeDir="false" afterPath="$PROJECT_DIR$/Gamegazette/Chess/gui/Table.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gamegazette/piece/Bishop.java" beforeDir="false" afterPath="$PROJECT_DIR$/Gamegazette/Chess/piece/Bishop.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gamegazette/piece/King.java" beforeDir="false" afterPath="$PROJECT_DIR$/Gamegazette/Chess/piece/King.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gamegazette/piece/Knight.java" beforeDir="false" afterPath="$PROJECT_DIR$/Gamegazette/Chess/piece/Knight.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gamegazette/piece/Pawn.java" beforeDir="false" afterPath="$PROJECT_DIR$/Gamegazette/Chess/piece/Pawn.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gamegazette/piece/Piece.java" beforeDir="false" afterPath="$PROJECT_DIR$/Gamegazette/Chess/piece/Piece.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gamegazette/piece/Queen.java" beforeDir="false" afterPath="$PROJECT_DIR$/Gamegazette/Chess/piece/Queen.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gamegazette/piece/Rook.java" beforeDir="false" afterPath="$PROJECT_DIR$/Gamegazette/Chess/piece/Rook.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Snake/Snake/GameFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/Gamegazette/Snake/GameFrame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Snake/Snake/GamePanelll.java" beforeDir="false" afterPath="$PROJECT_DIR$/Gamegazette/Snake/GamePanelll.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Snake/Snake/SnakeGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/Gamegazette/Snake/SnakeGame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Snake/gSnake.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gamegazette.iml" beforeDir="false" afterPath="$PROJECT_DIR$/gamegazette.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/gamegazette/board/BoardUtils.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/gamegazette/board/Move$MajorMove.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/gamegazette/board/Move$killHim.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/gamegazette/board/Move.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/gamegazette/gui/Table$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/gamegazette/gui/Table$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/gamegazette/gui/Table$BoardPanel.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/gamegazette/gui/Table$TilePanel.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/gamegazette/gui/Table.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/gamegazette/piece/Bishop.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/gamegazette/piece/King.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/gamegazette/piece/Knight.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/gamegazette/piece/Pawn.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/gamegazette/piece/Piece$PieceType$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/gamegazette/piece/Piece$PieceType$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/gamegazette/piece/Piece$PieceType$3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/gamegazette/piece/Piece$PieceType$4.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/gamegazette/piece/Piece$PieceType$5.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/gamegazette/piece/Piece$PieceType$6.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/gamegazette/piece/Queen.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/gamegazette/piece/Rook.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/gamegazette/player/BlackPlayer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/gamegazette/player/MoveStatus$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/gamegazette/player/MoveStatus$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/gamegazette/player/MoveStatus$3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/gamegazette/player/MoveStatus.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/gamegazette/player/MoveTransition.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/gamegazette/player/Player.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/gamegazette/player/WhitePlayer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Brick_Breaker/Brick_Breaker.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gamegazette/All.java" beforeDir="false" afterPath="$PROJECT_DIR$/Gamegazette/All.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gamegazette/Brick_Breaker/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/Gamegazette/Brick_Breaker/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gamegazette/Chess/board/Board.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gamegazette/Chess/board/BoardUtils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gamegazette/Chess/board/Colour.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gamegazette/Chess/board/Move.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gamegazette/Chess/board/Tile.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gamegazette/Chess/gChess.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gamegazette/Chess/gui/Table.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gamegazette/Chess/pictures/backGround.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gamegazette/Chess/pictures/pieces/BB.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gamegazette/Chess/pictures/pieces/BK.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gamegazette/Chess/pictures/pieces/BN.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gamegazette/Chess/pictures/pieces/BP.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gamegazette/Chess/pictures/pieces/BQ.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gamegazette/Chess/pictures/pieces/BR.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gamegazette/Chess/pictures/pieces/WB.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gamegazette/Chess/pictures/pieces/WK.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gamegazette/Chess/pictures/pieces/WN.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gamegazette/Chess/pictures/pieces/WP.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gamegazette/Chess/pictures/pieces/WQ.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gamegazette/Chess/pictures/pieces/WR.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gamegazette/Chess/piece/Bishop.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gamegazette/Chess/piece/King.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gamegazette/Chess/piece/Knight.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gamegazette/Chess/piece/Pawn.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gamegazette/Chess/piece/Piece.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gamegazette/Chess/piece/Queen.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gamegazette/Chess/piece/Rook.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gamegazette/Snake/GameFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/Gamegazette/Snake/Snake.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gamegazette/Snake/SnakeGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/Gamegazette/Snake/SnakeGame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/gamegazette/All$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/gamegazette/All$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/gamegazette/All$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/gamegazette/All$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/gamegazette/All.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/gamegazette/All.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/gamegazette/Brick_Breaker/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/gamegazette/Brick_Breaker/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/gamegazette/Chess/board/Board$Builder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/gamegazette/Chess/board/Board.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/gamegazette/Chess/board/Tile$BusyTile.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/gamegazette/Chess/board/Tile$EmptyTile.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/gamegazette/Chess/board/Tile.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/gamegazette/Chess/pictures/backGround.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/gamegazette/Chess/pictures/pieces/BB.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/gamegazette/Chess/pictures/pieces/BK.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/gamegazette/Chess/pictures/pieces/BN.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/gamegazette/Chess/pictures/pieces/BP.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/gamegazette/Chess/pictures/pieces/BQ.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/gamegazette/Chess/pictures/pieces/BR.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/gamegazette/Chess/pictures/pieces/WB.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/gamegazette/Chess/pictures/pieces/WK.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/gamegazette/Chess/pictures/pieces/WN.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/gamegazette/Chess/pictures/pieces/WP.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/gamegazette/Chess/pictures/pieces/WQ.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/gamegazette/Chess/pictures/pieces/WR.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/gamegazette/Chess/piece/Piece$PieceType.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/gamegazette/Chess/piece/Piece.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -129,6 +137,8 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.All.executor": "Run",
+    "Application.BrickBreaker.executor": "Run",
     "Application.Chess.executor": "Run",
     "Application.gChess.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -152,6 +162,13 @@
     </key>
   </component>
   <component name="RunManager">
+    <configuration name="All" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="All" />
+      <module name="gamegazette" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="gChess" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Chess.gChess" />
       <module name="gamegazette" />
@@ -159,6 +176,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.All" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
