@@ -6,8 +6,6 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-import static sun.security.util.KeyUtil.validate;
-
 public class All {
     //private final JFrame gameFrame;
     //private static Dimension mainFrame = new Dimension(600,600);

@@ -14,7 +14,7 @@ public class GamePanelll extends JPanel implements ActionListener {
     static final int HEIGHT = 500;
     static final int UNIT_SIZE = 20;
     static final int NUMBER_OF_UNITS = (WIDTH * HEIGHT) / UNIT_SIZE;
-    static final int DELAY = 400;
+    static final int DELAY = 200;
     
     final int x[] = new int[NUMBER_OF_UNITS];
     final int y[] = new int[NUMBER_OF_UNITS];
