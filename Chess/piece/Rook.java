@@ -43,7 +43,7 @@ public class Rook extends Piece {
                         final Colour whoColour = who.getpColour();
 
                         if(this.pColour!=whoColour){//kill him
-                            legalMoves.add(new Move.killHim(board,this,canGoTo,who));
+                            legalMoves.add(new Move.KillHim(board,this,canGoTo,who));
                         }
                         break;
                     }

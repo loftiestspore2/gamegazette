@@ -4,21 +4,21 @@ public enum MoveStatus {
     /// for moves like check,checkMate(like dead or alive in the adventure game)
     DONE {
         @Override
-        boolean isDone() {
+        public boolean isDone() {
             return true;
         }
     },
     IllegalMove {
         @Override
-        boolean isDone() {
+        public boolean isDone() {
             return false;
         }
     }
     ,LeavesPlayerInCheck {
         @Override
-        boolean isDone() {
+        public boolean isDone() {
             return false;
         }
     };
-    abstract boolean isDone();
+    public abstract boolean isDone();
     }

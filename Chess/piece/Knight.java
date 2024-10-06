@@ -43,7 +43,7 @@ public class Knight extends Piece{
                     if(this.pColour!=whoColour){//kill him
 
                         // TODO just a place holder cause im quite tired Done
-                        legalMoves.add(new Move.killHim(board,this,canGoTo,who));
+                        legalMoves.add(new Move.KillHim(board,this,canGoTo,who));
                     }
                 }
             }
