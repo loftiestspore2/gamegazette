@@ -32,6 +32,10 @@ public abstract class Tile {
 
     public abstract Piece getPiece();//it will get the piece
 
+    public int getTileco() {
+        return this.tileco;
+    }
+
     private static final class EmptyTile extends Tile {//subclass defines"attributes of tile"
 
         EmptyTile(final int cord) {

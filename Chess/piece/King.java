@@ -35,7 +35,7 @@ public class King extends Piece{//one square in any direction
 
                     if (this.pColour != whoColour) {//kill him
 
-                        legalMoves.add(new Move.killHim(board, this, canGoTo, who));
+                        legalMoves.add(new Move.KillHim(board, this, canGoTo, who));
                     }
                 }
             }

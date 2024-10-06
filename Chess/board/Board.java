@@ -153,12 +153,19 @@ public class Board {
         return builder.build();
     }
 
+    public Iterable<Move> getAllLegalMoves(){
+        ArrayList<Move> combinedMoves = new ArrayList<>();
+        combinedMoves.addAll(whitePlayer.getLegalMoves());
+        combinedMoves.addAll(blackPlayer.getLegalMoves());
+        return combinedMoves;
+    }
+
     //TODO benefits of a builder
     public static class Builder{
 
         Map<Integer, Piece> bConFig;
-
         Colour nextTurn;
+        Pawn ePawn;
 
         public Builder(){
             this.bConFig=new HashMap<>();
@@ -178,6 +185,9 @@ public class Board {
             return new Board(this);
         }
 
+        public void setEPawn(Pawn ePawn){
+            this.ePawn=ePawn;
+        }
     }
 }
-//TODO bite count: 5
+//TODO bite count: 20

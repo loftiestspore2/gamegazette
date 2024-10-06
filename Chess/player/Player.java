@@ -19,8 +19,11 @@ public abstract class Player {
     
     Player(final Board board, final Collection <Move>legalMoves, final Collection<Move>opsMoves){
         this.board=board;
-        this.plKing=establishKing();//ensures that there
-        this.legalMoves=legalMoves;
+        this.plKing=establishKing();//ensures that there is a king
+        ArrayList<Move> combinedMoves = new ArrayList<>();
+        combinedMoves.addAll(workKingCastling(legalMoves,opsMoves));
+        combinedMoves.addAll(legalMoves);
+        this.legalMoves= Collections.unmodifiableList(List.copyOf(combinedMoves));
         this.isInCheck = Player.workAttacksOnTile(this.plKing.getpPos(),opsMoves).isEmpty();
     }
 
@@ -32,7 +35,7 @@ public abstract class Player {
         return this.legalMoves;
     }
 
-    private static Collection<Move> workAttacksOnTile(int i, Collection<Move> moves) {
+    protected static Collection<Move> workAttacksOnTile(int i, Collection<Move> moves) {
         ///helper method
         final List<Move> attackMoves=new ArrayList<>();
         for(Move m :moves){
@@ -102,4 +105,5 @@ public abstract class Player {
     public abstract Collection<Piece>getActivePieces();
     public abstract Colour getColour();
     public abstract Player getOpp();
+    protected abstract Collection<Move> workKingCastling(Collection<Move>playerLegal,Collection<Move>oppLegal);
 }
