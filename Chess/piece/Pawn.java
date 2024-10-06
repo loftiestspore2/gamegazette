@@ -12,13 +12,13 @@ public class Pawn extends Piece{
     private final static int[] canMove ={8,16,7,9};
 
     public Pawn(final int pPos, Colour pColour) {
-        super(pPos, pColour);
+        super(pPos,pColour,PieceType.Pawn);
     }
 
     @Override
-    public Collection<Moves> workLegalMoves(Board board) {
+    public Collection<Move> workLegalMoves(Board board) {
 
-        final List<Moves>legalMoves=new ArrayList<>();
+        final List<Move>legalMoves=new ArrayList<>();
         for(int move:canMove){
 
             int canGoTo = this.pPos+(this.getpColour().getDirection()*move);
@@ -32,7 +32,7 @@ public class Pawn extends Piece{
 
             if(move==8 && !canGoToTile.isTileBusy() ){
                 //TODO later on (end reached)
-                legalMoves.add(new Moves.MajorMove(board,this,canGoTo)); //handels non attacking move
+                legalMoves.add(new Move.MajorMove(board,this,canGoTo)); //handels non attacking move
             }else if(move==16 && this.isFirst() &&
                     ((BoardUtils.secRow[this.pPos]&&this.pColour.isBlack())||
                     (BoardUtils.sevRow[this.pPos]&&this.pColour.isWhite()))){
@@ -40,7 +40,7 @@ public class Pawn extends Piece{
                 final int beforeCanGoTo = this.pPos +(this.getpColour().getDirection()*8);
 
                 if(!board.getTile(beforeCanGoTo).isTileBusy()&& !board.getTile(canGoTo).isTileBusy()){
-                    legalMoves.add(new Moves.MajorMove(board,this,canGoTo));
+                    legalMoves.add(new Move.MajorMove(board,this,canGoTo));
                 }//handels the jump move first move of pawn
             }else if(move==7
                     && !(BoardUtils.aethCol[this.pPos]&&this.pColour.isWhite()||
@@ -49,7 +49,7 @@ public class Pawn extends Piece{
                     final Piece who = canGoToTile.getPiece();
                     if(this.pColour!=who.getpColour()){
                         //TODO just a stub end reaching
-                        legalMoves.add(new Moves.MajorMove(board,this,canGoTo));
+                        legalMoves.add(new Move.MajorMove(board,this,canGoTo));
                     }
                 }
 
@@ -61,12 +61,17 @@ public class Pawn extends Piece{
                     final Piece who = canGoToTile.getPiece();
                     if (this.pColour != who.getpColour()) {
                         //TODO just a stub end reaching (ctrl c) @52
-                        legalMoves.add(new Moves.MajorMove(board, this, canGoTo));
+                        legalMoves.add(new Move.MajorMove(board, this, canGoTo));
                     }
                 }
             }
         }
         return Collections.unmodifiableList(legalMoves);
+    }
+
+    @Override
+    public Pawn movePiece(Move move) {
+        return new Pawn(move.getDestinationCo(),move.getmPiece().getpColour());
     }
 
     @Override

@@ -12,13 +12,13 @@ public class Bishop extends Piece{
     private final static int[] vectorCanMove = {-9,-8,-7,-1,1,7,8,9};//bishop U rook
 
     public Bishop(int pPos, Colour pColour) {
-        super(pPos, pColour);
+        super(pPos, pColour,PieceType.Bishop);
     }
 
     @Override
-    public Collection<Moves> workLegalMoves(Board board) {
+    public Collection<Move> workLegalMoves(Board board) {
 
-        final List<Moves>legalMoves=new ArrayList<>();
+        final List<Move>legalMoves=new ArrayList<>();
         for(int move:vectorCanMove){
 
             int canGoTo = this.pPos;
@@ -35,7 +35,7 @@ public class Bishop extends Piece{
                     final Tile canGoToTile = board.getTile(canGoTo);
 
                     if(!canGoToTile.isTileBusy()){
-                        legalMoves.add(new Moves.MajorMove(board,this,canGoTo));
+                        legalMoves.add(new Move.MajorMove(board,this,canGoTo));
 
                     }else{
 
@@ -43,15 +43,20 @@ public class Bishop extends Piece{
                         final Colour whoColour = who.getpColour();
 
                         if(this.pColour!=whoColour){//kill him
-                            legalMoves.add(new Moves.killHim(board,this,canGoTo,who));
+                            legalMoves.add(new Move.KillHim(board,this,canGoTo,who));
                         }
                         break;
                     }
                 }
             }
         }
-        List<Moves> lmoves = Collections.unmodifiableList(legalMoves);
+        List<Move> lmoves = Collections.unmodifiableList(legalMoves);
         return lmoves;
+    }
+
+    @Override
+    public Bishop movePiece(Move move) {
+        return new Bishop(move.getDestinationCo(),move.getmPiece().getpColour());///variable bite but still board
     }
 
     @Override
