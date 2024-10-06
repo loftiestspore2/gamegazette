@@ -2,9 +2,6 @@ package board;
 
 import piece.Piece;
 import piece.*;
-import player.BlackPlayer;
-import player.Player;
-import player.WhitePlayer;
 
 import java.util.*;
 
@@ -14,21 +11,14 @@ public class Board {
     private final Collection<Piece>whitePieces;
     private final Collection<Piece>blackPieces;
 
-    private final WhitePlayer whitePlayer;
-    private final BlackPlayer blackPlayer;
-    private final Player currentPlayer;
-
     private Board(Builder builder) {
         this.gameBoard = createGameBoard(builder);
         this.whitePieces=workActivePieces(this.gameBoard,Colour.White);
         this.blackPieces=workActivePieces(this.gameBoard,Colour.Black);
 
-        final Collection<Move> whiteLegalMoves= workLegalmoves(this.whitePieces);
-        final Collection<Move> blackLegalMoves= workLegalmoves(this.blackPieces);
+        final Collection<Moves> whiteLegalMoves= workLegalmoves(this.whitePieces);
+        final Collection<Moves> blackLegalMoves= workLegalmoves(this.blackPieces);
 
-        this.whitePlayer=new WhitePlayer(this,whiteLegalMoves,blackLegalMoves);
-        this.blackPlayer=new BlackPlayer(this,whiteLegalMoves,blackLegalMoves);
-        this.currentPlayer = builder.nextTurn.choosePlayer(this.whitePlayer,this.blackPlayer);
     }
 
     @Override
@@ -45,31 +35,9 @@ public class Board {
         return builder.toString();
     }
 
-    public Player whitePlayer(){
-        return this.whitePlayer;
-    }
+    private Collection<Moves> workLegalmoves(Collection<Piece> pieces){
 
-    public Player blackPlayer(){
-        return this.blackPlayer;
-    }
-
-    public Player currentPlayer(){ //getter for current player
-        //TODO this might just turn out like the board (bite) :)
-        return this.currentPlayer;
-    }
-
-    public Collection<Piece> getBlackP(){
-       return this.blackPieces;
-    }
-
-    public Collection<Piece> getWhiteP(){
-        return this.whitePieces;
-    }
-
-
-    private Collection<Move> workLegalmoves(Collection<Piece> pieces){
-
-        final List<Move>legalMoves=new ArrayList<>();
+        final List<Moves>legalMoves=new ArrayList<>();
 
         for(Piece piece:pieces){
             legalMoves.addAll(piece.workLegalMoves(this));//TODO check out later its suposed to be add all 
@@ -131,22 +99,22 @@ public class Board {
         builder.setPiece(new Pawn(14,Colour.Black));
         builder.setPiece(new Pawn(15,Colour.Black));
         //bottom 2 layout White
-        builder.setPiece(new Rook(56,Colour.White));
-        builder.setPiece(new Knight(57,Colour.White));
-        builder.setPiece(new Bishop(58,Colour.White));
-        builder.setPiece(new Queen(59,Colour.White));
-        builder.setPiece(new King(60,Colour.White));
-        builder.setPiece(new Bishop(61,Colour.White));
-        builder.setPiece(new Knight(62,Colour.White));
-        builder.setPiece(new Rook(63,Colour.White));
-        builder.setPiece(new Pawn(48,Colour.White));
-        builder.setPiece(new Pawn(49,Colour.White));
-        builder.setPiece(new Pawn(50,Colour.White));
-        builder.setPiece(new Pawn(51,Colour.White));
-        builder.setPiece(new Pawn(52,Colour.White));
-        builder.setPiece(new Pawn(53,Colour.White));
-        builder.setPiece(new Pawn(54,Colour.White));
-        builder.setPiece(new Pawn(55,Colour.White));
+        builder.setPiece(new Rook(56,Colour.Black));
+        builder.setPiece(new Knight(57,Colour.Black));
+        builder.setPiece(new Bishop(58,Colour.Black));
+        builder.setPiece(new Queen(59,Colour.Black));
+        builder.setPiece(new King(60,Colour.Black));
+        builder.setPiece(new Bishop(61,Colour.Black));
+        builder.setPiece(new Knight(62,Colour.Black));
+        builder.setPiece(new Rook(63,Colour.Black));
+        builder.setPiece(new Pawn(48,Colour.Black));
+        builder.setPiece(new Pawn(49,Colour.Black));
+        builder.setPiece(new Pawn(50,Colour.Black));
+        builder.setPiece(new Pawn(51,Colour.Black));
+        builder.setPiece(new Pawn(52,Colour.Black));
+        builder.setPiece(new Pawn(53,Colour.Black));
+        builder.setPiece(new Pawn(54,Colour.Black));
+        builder.setPiece(new Pawn(55,Colour.Black));
         //first move
         builder.setTurn(Colour.White);
 
@@ -170,7 +138,7 @@ public class Board {
         }
 
         public Builder setTurn(Colour colour){//turn is the person currently playing
-            this.nextTurn=colour;
+            this.nextTurn=nextTurn;
             return this;
         }
 
@@ -178,6 +146,7 @@ public class Board {
             return new Board(this);
         }
 
+        
+
     }
 }
-//TODO bite count: 5

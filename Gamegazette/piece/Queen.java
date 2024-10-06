@@ -1,3 +1,5 @@
+//union of the bishop and rook
+
 package piece;
 
 import board.*;
@@ -7,18 +9,19 @@ import java.util.Collection;
 import java.util.Collections;
 import java.util.List;
 
-public class Rook extends Piece {
+public class Queen extends Piece {
 
-    private final static int[] vectorCanMove = {-8,-1,1,8};
+    private final static int[] vectorCanMove = {-9,-7,7,9};
 
-    public Rook(int pPos, Colour pColour) {
-        super(pPos,pColour,PieceType.Rook);
+
+    public Queen(int pPos, Colour pColour) {
+        super(pPos, pColour);
     }
 
     @Override
-    public Collection<Move> workLegalMoves(Board board) {
+    public Collection<Moves> workLegalMoves(Board board) {
 
-        final List<Move>legalMoves=new ArrayList<>();
+        final List<Moves>legalMoves=new ArrayList<>();
         for(int move:vectorCanMove){
 
             int canGoTo = this.pPos;
@@ -35,7 +38,7 @@ public class Rook extends Piece {
                     final Tile canGoToTile = board.getTile(canGoTo);
 
                     if(!canGoToTile.isTileBusy()){
-                        legalMoves.add(new Move.MajorMove(board,this,canGoTo));
+                        legalMoves.add(new Moves.MajorMove(board,this,canGoTo));
 
                     }else{
 
@@ -43,31 +46,25 @@ public class Rook extends Piece {
                         final Colour whoColour = who.getpColour();
 
                         if(this.pColour!=whoColour){//kill him
-                            legalMoves.add(new Move.killHim(board,this,canGoTo,who));
+                            legalMoves.add(new Moves.killHim(board,this,canGoTo,who));
                         }
                         break;
                     }
                 }
             }
         }
-        List<Move> lmoves = Collections.unmodifiableList(legalMoves);
+        List<Moves> lmoves = Collections.unmodifiableList(legalMoves);
         return lmoves;
     }
-
-    @Override
-    public Rook movePiece(Move move) {
-        return new Rook(move.getDestinationCo(),move.getmPiece().getpColour());
-    }
-
     private static boolean isCol1exc(int cPos,int move){//edge cases
-        return BoardUtils.firstCol[cPos] &&(move==-1);
+        return BoardUtils.firstCol[cPos] &&(move==-9||move==7);
     }
     private static boolean isCol8exc(int cPos,int move){//edge cases
-        return BoardUtils.firstCol[cPos] &&(move==1);
+        return BoardUtils.firstCol[cPos] &&(move==-7||move==9);
     }
 
     @Override
     public String toString(){
-        return PieceType.Rook.toString();
+        return PieceType.Queen.toString();
     }
 }

@@ -15,13 +15,13 @@ public class Knight extends Piece{
     private final static int[] canMove ={-17,-15,-10,-6,6,10,15,17};
 
     public Knight(int pPos, Colour pColour) {
-        super(pPos,pColour,PieceType.Bishop);
+        super(pPos, pColour);//TODO what does this super thing do check
     }
 
     @Override
-    public Collection<Move> workLegalMoves(Board board) {
+    public Collection<Moves> workLegalMoves(Board board) {
 
-        final List<Move>legalMoves=new ArrayList<>();
+        final List<Moves>legalMoves=new ArrayList<>();
 
         for(int move:canMove){ // move == currentCanidate or current canidateoffset & canMove==canidate_move_candidates
 
@@ -35,7 +35,7 @@ public class Knight extends Piece{
 
                 final Tile canGoToTile = board.getTile(canGoTo);
                 if(!canGoToTile.isTileBusy()){
-                    legalMoves.add(new Move.MajorMove(board,this,canGoTo));
+                    legalMoves.add(new Moves.MajorMove(board,this,canGoTo));
                 }else{
                     final Piece who =canGoToTile.getPiece();
                     final Colour whoColour = who.getpColour();
@@ -43,17 +43,12 @@ public class Knight extends Piece{
                     if(this.pColour!=whoColour){//kill him
 
                         // TODO just a place holder cause im quite tired Done
-                        legalMoves.add(new Move.killHim(board,this,canGoTo,who));
+                        legalMoves.add(new Moves.killHim(board,this,canGoTo,who));
                     }
                 }
             }
         }
         return Collections.unmodifiableList(legalMoves);
-    }
-
-    @Override
-    public Knight movePiece(Move move) {
-        return new Knight(move.getDestinationCo(),move.getmPiece().getpColour());
     }
 
     private static boolean isCol1exc(int cPos,int move){//edge case

@@ -8,7 +8,7 @@ import java.util.Map;
 
 public abstract class Tile {
 
-    protected final int tileco; //this will say if it's there
+    protected final int tileco;//this will say if it's there
 
     private static final Map <Integer,EmptyTile> emptyTiles = createAllPossibileEmptyTiles();
 
@@ -27,7 +27,7 @@ public abstract class Tile {
     private Tile(int tileco){
         this.tileco = tileco;
     }
-    public abstract boolean isTileBusy ();/*abstract means that meathod is not difined here but will be in a subClass
+    public abstract boolean isTileBusy ();/*abstract means that meathod is not difined here bust will be in a subClass
      this method will allow to check if there is a piece here */
 
     public abstract Piece getPiece();//it will get the piece
@@ -63,8 +63,8 @@ public abstract class Tile {
 
         @Override
         public String toString(){
-            return (getPiece().getpColour().isBlack())?
-                    getPiece().toString().toLowerCase() : getPiece().toString();
+            return (getPiece().getpColour().isBlack())? toString().toLowerCase():
+                   toString();
         }
 
         @Override
