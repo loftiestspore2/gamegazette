@@ -4,13 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ecf650d0-1a38-4cb4-bf09-191e2c46d741" name="Changes" comment="there  might be classes with missing code but the gui and move and all Pieces and boardutils">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Chess/gui/Table.java" beforeDir="false" afterPath="$PROJECT_DIR$/Chess/gui/Table.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Chess/player/MoveTransition.java" beforeDir="false" afterPath="$PROJECT_DIR$/Chess/player/MoveTransition.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/gamegazette/gui/Table.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/gamegazette/gui/Table.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/gamegazette/player/MoveTransition.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/gamegazette/player/MoveTransition.class" afterDir="false" />
-    </list>
+    <list default="true" id="ecf650d0-1a38-4cb4-bf09-191e2c46d741" name="Changes" comment="there  might be classes with missing code but the gui and move and all Pieces and boardutils" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -51,20 +45,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.Chess.executor": "Run",
-    "Application.gChess.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "feature/tebogo",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/dev",
-    "project.structure.last.edited": "Libraries",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.intentionPowerPack"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Chess.executor&quot;: &quot;Run&quot;,
+    &quot;Application.gChess.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;feature/tebogo&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/dev&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.intentionPowerPack&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="player" />
@@ -165,7 +159,15 @@
       <option name="project" value="LOCAL" />
       <updated>1728226726666</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="there  might be classes with missing code but the gui and move and all Pieces and boardutils">
+      <option name="closed" value="true" />
+      <created>1728236419259</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1728236419259</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
