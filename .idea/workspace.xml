@@ -4,16 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ecf650d0-1a38-4cb4-bf09-191e2c46d741" name="Changes" comment="GUI start">
-      <change afterPath="$PROJECT_DIR$/Gamegazette/background.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gamegazette/All.java" beforeDir="false" afterPath="$PROJECT_DIR$/Gamegazette/All.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gamegazette/Brick_Breaker/GamePlay.java" beforeDir="false" afterPath="$PROJECT_DIR$/Gamegazette/Brick_Breaker/GamePlay.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gamegazette/Snake/GamePanelll.java" beforeDir="false" afterPath="$PROJECT_DIR$/Gamegazette/Snake/GamePanelll.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/gamegazette/All$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/gamegazette/All$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/gamegazette/All$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/gamegazette/All$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/gamegazette/All.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/gamegazette/All.class" afterDir="false" />
-    </list>
+    <list default="true" id="ecf650d0-1a38-4cb4-bf09-191e2c46d741" name="Changes" comment="GUI start" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -49,12 +40,22 @@
     &quot;assignee&quot;: &quot;loftiestspore2&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/loftiestspore2/gamegazette.git&quot;,
-    &quot;accountId&quot;: &quot;d85a0ef2-450a-45a7-8b06-f68a36177b6c&quot;
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/loftiestspore2/gamegazette.git",
+    "accountId": "d85a0ef2-450a-45a7-8b06-f68a36177b6c"
+  },
+  "recentNewPullRequestHead": {
+    "server": {
+      "useHttp": false,
+      "host": "github.com",
+      "port": null,
+      "suffix": null
+    },
+    "owner": "loftiestspore2",
+    "repository": "gamegazette"
   }
-}</component>
+}]]></component>
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="CurrentFile" />
   </component>
@@ -74,7 +75,7 @@
     "Application.gChess.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "feature/2",
+    "git-widget-placeholder": "#8 on feature/2",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/dev",
     "project.structure.last.edited": "Libraries",
@@ -203,7 +204,15 @@
       <option name="project" value="LOCAL" />
       <updated>1728249114139</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="GUI start">
+      <option name="closed" value="true" />
+      <created>1728250311098</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1728250311098</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

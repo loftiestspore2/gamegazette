@@ -10,4 +10,5 @@ Tebogo Phosa g24P9535
 Group mentor: Tywin Langa (g22l4786@campus.ru.ac.za)
 Project title: gamegazette
 
+https://github.com/loftiestspore2/gamegazette
 
