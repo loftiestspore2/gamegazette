@@ -10,7 +10,7 @@ public class BrickBreaker{
     }
 
     // Main method
-    public static void main(String[] args) {
+    public static void main(String[] args) {//add Icon
         // Use Swing's Event Dispatch Thread to ensure thread safety
         SwingUtilities.invokeLater(() -> new Main());
     }
@@ -22,7 +22,7 @@ public class BrickBreaker{
         frame.setBounds(10, 10, 700, 700);
         frame.setTitle("Breakout Ball");
         frame.setResizable(false);
-        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         frame.add(gamePlay);
         frame.setVisible(true);
     }

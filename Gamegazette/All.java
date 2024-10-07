@@ -7,8 +7,6 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class All {
-    //private final JFrame gameFrame;
-    //private static Dimension mainFrame = new Dimension(600,600);
 
     public static void main(String[] args){
         JFrame gameFrame=new JFrame("Gamegazette");
@@ -16,6 +14,24 @@ public class All {
         gameFrame.setLayout(new BorderLayout());
         final JMenuBar tMenuBar = createMTable();
         gameFrame.setJMenuBar(tMenuBar);
+        //THE background
+        /////////////////////////////////////////////////////////////////////////////////////////////////////////
+        JPanel backgroundPanel = new JPanel() {
+            private ImageIcon backgroundImage = new ImageIcon("Gamegazette/background.gif");
+
+            @Override
+            protected void paintComponent(Graphics g) {
+                super.paintComponent(g);
+                g.drawImage(backgroundImage.getImage(), 0, 0, getWidth(), getHeight(), this);
+            }
+        };
+        backgroundPanel.setLayout(new BorderLayout());
+        /////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+        ImageIcon xIcon = new ImageIcon("Gamegazette/icon.gif");
+        gameFrame.setIconImage(xIcon.getImage());
+
+        gameFrame.setContentPane(backgroundPanel);
         gameFrame.setVisible(true);
         //games();
 
@@ -41,7 +57,7 @@ public class All {
         return tMenuBar;
     }
 
-    private static JMenu createFileMenu(){ // to load Moves
+    private static JMenu createFileMenu(){
         final JMenu fMenu = new JMenu("Options");
 
         final JMenuItem exitMenuI = new JMenuItem("Exit");
