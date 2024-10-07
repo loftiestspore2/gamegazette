@@ -4,48 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ecf650d0-1a38-4cb4-bf09-191e2c46d741" name="Changes" comment="GUI start">
-      <change afterPath="$PROJECT_DIR$/Gamegazette/icon.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gamegazette/All.java" beforeDir="false" afterPath="$PROJECT_DIR$/Gamegazette/All.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gamegazette/Snake/SnakeGame.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/gamegazette/All$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/gamegazette/All$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/gamegazette/All$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/gamegazette/All$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/gamegazette/All.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/gamegazette/All.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/gamegazette/gifs/backGround.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/gamegazette/gifs/pieces/BB.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/gamegazette/gifs/pieces/BK.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/gamegazette/gifs/pieces/BN.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/gamegazette/gifs/pieces/BP.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/gamegazette/gifs/pieces/BQ.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/gamegazette/gifs/pieces/BR.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/gamegazette/gifs/pieces/WB.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/gamegazette/gifs/pieces/WK.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/gamegazette/gifs/pieces/WN.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/gamegazette/gifs/pieces/WP.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/gamegazette/gifs/pieces/WQ.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/gamegazette/gifs/pieces/WR.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/gamegazette/gui/Table$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/gamegazette/gui/Table$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/gamegazette/gui/Table$BoardPanel.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/gamegazette/gui/Table$TilePanel$1$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/gamegazette/gui/Table$TilePanel$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/gamegazette/gui/Table$TilePanel.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/gamegazette/pictures/backGround.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/gamegazette/pictures/pieces/BB.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/gamegazette/pictures/pieces/BK.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/gamegazette/pictures/pieces/BN.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/gamegazette/pictures/pieces/BP.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/gamegazette/pictures/pieces/BQ.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/gamegazette/pictures/pieces/BR.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/gamegazette/pictures/pieces/WB.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/gamegazette/pictures/pieces/WK.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/gamegazette/pictures/pieces/WN.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/gamegazette/pictures/pieces/WP.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/gamegazette/pictures/pieces/WQ.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/gamegazette/pictures/pieces/WR.gif" beforeDir="false" />
-    </list>
+    <list default="true" id="ecf650d0-1a38-4cb4-bf09-191e2c46d741" name="Changes" comment="added back that one and ico 09:24 07" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -89,7 +48,7 @@
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
     &quot;url&quot;: &quot;https://github.com/loftiestspore2/gamegazette.git&quot;,
-    &quot;accountId&quot;: &quot;d85a0ef2-450a-45a7-8b06-f68a36177b6c&quot;
+    &quot;accountId&quot;: &quot;c8f740ba-5d1d-411c-81fb-3914e933129c&quot;
   }
 }</component>
   <component name="ProblemsViewState">
@@ -111,7 +70,7 @@
     &quot;Application.gChess.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;feature/2&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;#8 on feature/2&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
     &quot;last_opened_file_path&quot;: &quot;C:/dev&quot;,
     &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
@@ -131,10 +90,23 @@
       <recent name="C:\Users\logph\OneDrive\Documents\GitHub\gamegazette\Chess" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.All">
+  <component name="RunManager" selected="Application.BrickBreaker">
     <configuration name="All" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="All" />
       <module name="gamegazette" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BrickBreaker" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Brick_Breaker.BrickBreaker" />
+      <module name="gamegazette" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Brick_Breaker.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -148,6 +120,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.BrickBreaker" />
         <item itemvalue="Application.All" />
       </list>
     </recent_temporary>
@@ -241,7 +214,15 @@
       <option name="project" value="LOCAL" />
       <updated>1728249114139</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="added back that one and ico 09:24 07">
+      <option name="closed" value="true" />
+      <created>1728286028223</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1728286028223</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -260,7 +241,8 @@
     <MESSAGE value="im just fixing syntax and variable errors" />
     <MESSAGE value="added to Pawn and board class" />
     <MESSAGE value="GUI start" />
-    <option name="LAST_COMMIT_MESSAGE" value="GUI start" />
+    <MESSAGE value="added back that one and ico 09:24 07" />
+    <option name="LAST_COMMIT_MESSAGE" value="added back that one and ico 09:24 07" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
