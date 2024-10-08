@@ -17,7 +17,7 @@ public class All {
         //THE background
         /////////////////////////////////////////////////////////////////////////////////////////////////////////
         JPanel backgroundPanel = new JPanel() {
-            private ImageIcon backgroundImage = new ImageIcon("Gamegazette/background.gif");
+            private ImageIcon backgroundImage = new ImageIcon("Gamegazette/images/background.gif");
 
             @Override
             protected void paintComponent(Graphics g) {
@@ -28,7 +28,7 @@ public class All {
         backgroundPanel.setLayout(new BorderLayout());
         /////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-        ImageIcon xIcon = new ImageIcon("Gamegazette/icon.gif");
+        ImageIcon xIcon = new ImageIcon("Gamegazette/images/icon.gif");
         gameFrame.setIconImage(xIcon.getImage());
 
         gameFrame.setContentPane(backgroundPanel);
@@ -37,7 +37,7 @@ public class All {
 
     }
 
-    private static void games(){
+    /*private static void games(){
         final JMenu fMenu = new JMenu("File");
 
         final JMenuItem exitMenuI = new JMenuItem("Exit");
@@ -49,7 +49,7 @@ public class All {
         });
         fMenu.add(exitMenuI);
         
-    }
+    }*/
 
     private static JMenuBar createMTable(){
         final JMenuBar tMenuBar = new JMenuBar();
@@ -88,4 +88,6 @@ public class All {
         fMenu.add(SnakeI);
         return fMenu;
     }
+
+    
 }
