@@ -4,22 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ecf650d0-1a38-4cb4-bf09-191e2c46d741" name="Changes" comment="GUI start">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gamegazette/All.java" beforeDir="false" afterPath="$PROJECT_DIR$/Gamegazette/All.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gamegazette/background.gif" beforeDir="false" afterPath="$PROJECT_DIR$/Gamegazette/images/background.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gamegazette/icon.gif" beforeDir="false" afterPath="$PROJECT_DIR$/Gamegazette/images/icon.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/gamegazette/All$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/gamegazette/All$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/gamegazette/All$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/gamegazette/All$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/gamegazette/All$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/gamegazette/All$3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/gamegazette/All$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/gamegazette/All$4.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/gamegazette/All.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/gamegazette/All.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/gamegazette/Brick_Breaker/BrickBreaker.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/gamegazette/Brick_Breaker/BrickBreaker.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/gamegazette/Snake/GamePanelll.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/gamegazette/Snake/GamePanelll.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/gamegazette/Snake/Snake.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/gamegazette/Snake/Snake.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/gamegazette/Snake/SnakeGame.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/gamegazette/background.gif" beforeDir="false" />
-    </list>
+    <list default="true" id="ecf650d0-1a38-4cb4-bf09-191e2c46d741" name="Changes" comment="no music" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -223,7 +208,15 @@
       <option name="project" value="LOCAL" />
       <updated>1728250311098</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="no music">
+      <option name="closed" value="true" />
+      <created>1728418846788</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1728418846788</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -242,7 +235,8 @@
     <MESSAGE value="im just fixing syntax and variable errors" />
     <MESSAGE value="added to Pawn and board class" />
     <MESSAGE value="GUI start" />
-    <option name="LAST_COMMIT_MESSAGE" value="GUI start" />
+    <MESSAGE value="no music" />
+    <option name="LAST_COMMIT_MESSAGE" value="no music" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
