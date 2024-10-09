@@ -1,15 +1,15 @@
 package Brick_Breaker;
 
-import java.awt.Color;
-import java.awt.Font;
-import java.awt.Graphics;
-import java.awt.Graphics2D;
-import java.awt.Rectangle;
+import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
+import java.io.File;
 
+import javax.sound.sampled.AudioInputStream;
+import javax.sound.sampled.AudioSystem;
+import javax.sound.sampled.Clip;
 import javax.swing.*;
 
 public class GamePlay extends JPanel implements KeyListener, ActionListener {
@@ -21,7 +21,7 @@ public class GamePlay extends JPanel implements KeyListener, ActionListener {
 	private int score = 0;
 	private int totalBricks = 21;
 	private Timer timer;
-	private int delay = 1;
+	private int delay = 0;
 	
 	private int playerX = 320;
 	private int ballPosX = 120;
@@ -29,6 +29,8 @@ public class GamePlay extends JPanel implements KeyListener, ActionListener {
 	private int ballXdir = -1;
 	private int ballYdir = -2;
 	private MapGenerator map;
+
+	//private boolean isMuted = false;
 	
 	public GamePlay() {
 		map = new MapGenerator(3, 7);
@@ -37,11 +39,11 @@ public class GamePlay extends JPanel implements KeyListener, ActionListener {
 		setFocusTraversalKeysEnabled(false);
 		timer = new Timer(delay, this); 
 		timer.start();
-			
+
 	}
 	
 	public void paint(Graphics g) {
-		g.setColor(Color.black);
+		//g.setColor(Color.black);
 		g.fillRect(1, 1, 692, 592);
 		
 		map.draw((Graphics2D) g);
@@ -60,11 +62,18 @@ public class GamePlay extends JPanel implements KeyListener, ActionListener {
 		
 		g.setColor(Color.YELLOW);
 		g.fillOval(ballPosX, ballPosY, 20,20);
+
+		if (!play&&score!=0&&ballPosY<570){ //pause
+			g.setColor(Color.red);
+			g.setFont(new Font("Sans serif", Font.BOLD, 30));
+			g.drawString("Paused", 300, 300);
+		}
 		
 		if (totalBricks <= 0) {
 			play = false;
 			ballXdir = 0;
 			ballYdir = 0;
+
 			g.setColor(Color.red);
 			g.setFont(new Font("Sans serif", Font.BOLD, 30));
 			g.drawString("You Won", 190, 300);
@@ -73,7 +82,7 @@ public class GamePlay extends JPanel implements KeyListener, ActionListener {
 			g.drawString("Press Enter to Restart", 230, 350);
 		}
 		
-		if (ballPosY > 570) {
+		if (ballPosY > 570) {//game over
 			play = false;
 			ballXdir = 0;
 			ballYdir = 0;
@@ -95,6 +104,7 @@ public class GamePlay extends JPanel implements KeyListener, ActionListener {
 		if (play) {
 			if (new Rectangle(ballPosX, ballPosY, 20, 20).intersects(new Rectangle(playerX, 550, 100, 8))) {
 				ballYdir = -ballYdir;
+
 			}
 			
 			A : for (int i = 0; i < map.map.length; i++) {
@@ -119,6 +129,21 @@ public class GamePlay extends JPanel implements KeyListener, ActionListener {
 							}else {
 								ballYdir = -ballYdir;
 							}
+							/*...............................*/
+							if (score % 20 == 0 && score > 0) {
+								//to make game a bit more difficult
+								if (ballXdir > 0) {
+									ballXdir++;
+								} else {
+									ballXdir--;
+								}
+								if (ballYdir > 0) {
+									ballYdir++;
+								} else {
+									ballYdir--;
+								}
+							}
+							/*...............................*/
 							break A;
 						}
 					}
@@ -149,6 +174,9 @@ public class GamePlay extends JPanel implements KeyListener, ActionListener {
 	}
 	
 	public void keyReleased(KeyEvent e) {
+		if(e.getKeyCode() == KeyEvent.VK_SPACE){
+			play=!play;
+		}
 		
 	}
 	
@@ -196,4 +224,8 @@ public class GamePlay extends JPanel implements KeyListener, ActionListener {
 		play = true;
 		playerX -= 20;
 	}
+
 }
+
+
+

@@ -18,13 +18,14 @@ public class BrickBreaker{
     // Method to set up the game window
     private void setupGame() {
         JFrame frame = new JFrame();
-        GamePlay gamePlay = new GamePlay(); // Assuming GamePlay is defined elsewhere
+        GamePlay gamePlay = new GamePlay();
         frame.setBounds(10, 10, 700, 700);
         frame.setTitle("Breakout Ball");
         frame.setResizable(false);
         frame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         frame.add(gamePlay);
         frame.setVisible(true);
+
     }
 }
 
