@@ -1,6 +1,7 @@
 package Brick_Breaker;
 
 import javax.swing.*;
+import java.awt.*;
 
 public class BrickBreaker{
 
@@ -24,6 +25,9 @@ public class BrickBreaker{
         frame.setResizable(false);
         frame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         frame.add(gamePlay);
+
+        ImageIcon xIcon = new ImageIcon("Gamegazette/images/breaker.gif");
+        frame.setIconImage(xIcon.getImage());
         frame.setVisible(true);
 
     }

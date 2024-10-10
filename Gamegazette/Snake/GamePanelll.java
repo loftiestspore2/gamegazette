@@ -31,7 +31,7 @@ public class GamePanelll extends JPanel implements ActionListener {
     GamePanelll() {
         random = new Random();
         this.setPreferredSize(new Dimension(WIDTH, HEIGHT));
-        this.setBackground(Color.darkGray);
+        //this.setBackground(Color.darkGray);
         this.setFocusable(true);
         this.addKeyListener(new MyKeyAdapter());
         play();
@@ -169,6 +169,11 @@ public class GamePanelll extends JPanel implements ActionListener {
                         direction = 'O';
                     }
                     break;
+
+                case KeyEvent.VK_SPACE:
+                    running=!running;
+                    break;
+
             }
         }
     }  
